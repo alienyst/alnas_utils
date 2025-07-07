@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="alnas_capture_image.ImageField" t-inherit="web.ImageField" t-inherit-mode="extension">
+        <xpath expr="//t[@t-set-slot='toggler']" position="inside">
+            <button
+                class="o_select_file_button btn btn-light border-0 rounded-circle m-1 p-1"
+                data-tooltip="Camera"
+                aria-label="camera"
+                t-on-click="openCamera">
+                <i class="fa fa-camera fa-fw"/>
+            </button>
+        </xpath>
+    </t>
+
+</templates>

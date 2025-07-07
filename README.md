@@ -1,2 +1,4 @@
-# alnas_image_capture
-Add functionality in odoo image field to take image from webcam
+# Utils
+Custom odoo module for add some utility function
+
+- alnas_image_capture : take image from webcam in image field
