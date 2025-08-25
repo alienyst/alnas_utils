@@ -1,0 +1,17 @@
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+#map_container {
+  height: 100%;
+  height: 400px; 
+  margin-top: 10px;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#map #infowindow-content {
+  display: inline;
+}

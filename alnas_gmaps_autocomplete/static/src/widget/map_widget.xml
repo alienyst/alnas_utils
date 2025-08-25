@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+   <t t-name="alnas_gmaps_autocomplete.MapWidget" owl="1">
+      <div t-ref="mapContainer" t-attf-class="{{ state.apiKeyAvailable ? '' : 'd-none' }}" id="map_container"></div>    
+   </t>
+</templates>

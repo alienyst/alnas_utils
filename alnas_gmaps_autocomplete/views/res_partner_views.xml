@@ -1,0 +1,14 @@
+<odoo>
+    <record id="view_partner_form_inherit" model="ir.ui.view">
+        <field name="name">res.partner.form.alnas_gmaps_autocomplete</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='street']" position="before">
+                <!-- map fields key, val => widget_key: odoo_model_field -->
+                <widget name="gmaps_address_autocomplete" options="{'fields': {'name': 'name', 'address': 'street', 'address2': 'street2', 'country': 'country_id', 'state': 'state_id', 'city': 'city', 'zip': 'zip', 'latitude': 'partner_latitude', 'longitude': 'partner_longitude', 'phone': 'phone', 'website': 'website', 'info': 'comment', 'full_address': 'map_address'}}"/>                
+            </xpath>
+        </field>
+    </record> 
+</odoo>
+        
